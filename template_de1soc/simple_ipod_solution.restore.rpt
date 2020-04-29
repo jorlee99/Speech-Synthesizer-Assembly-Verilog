@@ -1,0 +1,112 @@
+Restore Archived Project report for simple_ipod_solution
+Sun Apr 12 16:49:00 2020
+Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Sun Apr 12 16:49:00 2020 ;
+; Revision Name                   ; simple_ipod_solution                  ;
+; Top-level Entity Name           ; simple_ipod_solution                  ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/Jordan/Desktop/FP/template_de1soc/simple_ipod_solution_tmp_archive.qar' into the 'C:/Users/Jordan/Desktop/ProjectCopies/actual audio' directory
+Info: Generated report 'simple_ipod_solution.restore.rpt'
+
+
++--------------------------------------------+
+; Files Restored                             ;
++--------------------------------------------+
+; File Name                                  ;
++--------------------------------------------+
+; qar_info.json                              ;
+; Clock_Gen.v                                ;
+; LCD_Scope_Encapsulated_pacoblaze.qxp       ;
+; SevenSegmentDisplayDecoder.qxp             ;
+; assignment_defaults.qdf                    ;
+; async_trap_and_reset.qxp                   ;
+; async_trap_and_reset_gen_1_pulse.qxp       ;
+; audio_controller.qxp                       ;
+; audio_visual.v                             ;
+; clock_sync.v                               ;
+; db/lcd_scope_auto_stripped.stp             ;
+; doublesync.v                               ;
+; flash.qxp                                  ;
+; generate_arbitrary_divided_clk32.v         ;
+; ipod_fsm.v                                 ;
+; ipod_fsm_timer.v                           ;
+; ipod_fsm_timer_tb.vwf                      ;
+; kbd_ctrl.v                                 ;
+; key2ascii.v                                ;
+; keyboard_converter.v                       ;
+; keyboard_converter_tb.vwf                  ;
+; lcd_scope.stp                              ;
+; lcd_scope_encapsulated_pacoblaze_wrapper.v ;
+; narrator_ctrl.v                            ;
+; pacoblaze_instruction_memory.v             ;
+; picoblaze_template.v                       ;
+; pracpico.mem                               ;
+; scope_capture.qxp                          ;
+; simple_ipod_solution.qpf                   ;
+; simple_ipod_solution.qsf                   ;
+; simple_ipod_solution.v                     ;
+; speed_reg_control.qxp                      ;
+; timing_constraints.sdc                     ;
+; to_slow_clk_interface.qxp                  ;
+; var_clk_div32.qxp                          ;
+; write_kbd_to_scope_lcd.v                   ;
+; pacoblaze/pacoblaze.v                      ;
+; pacoblaze/pacoblaze3.v                     ;
+; pacoblaze/pacoblaze_alu.v                  ;
+; pacoblaze/pacoblaze_idu.v                  ;
+; pacoblaze/pacoblaze_inc.v                  ;
+; pacoblaze/pacoblaze_register.v             ;
+; pacoblaze/pacoblaze_scratch.v              ;
+; pacoblaze/pacoblaze_stack.v                ;
++--------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

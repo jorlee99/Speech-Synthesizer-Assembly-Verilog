@@ -1,0 +1,60 @@
+Quartus II Archive log --	C:/Users/Jordan/Desktop/FP/template_de1soc/simple_ipod_solution_tmp_archive.qarlog
+
+Archive:	C:/Users/Jordan/Desktop/FP/template_de1soc/simple_ipod_solution_tmp_archive.qar
+Date:		Mon Apr 13 20:48:00 2020
+Quartus II 64-Bit		14.1.0 Build 186 12/03/2014 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Jordan/Desktop/FP/template_de1soc/Clock_Gen.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/LCD_Scope_Encapsulated_pacoblaze.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/SevenSegmentDisplayDecoder.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/assignment_defaults.qdf
+C:/Users/Jordan/Desktop/FP/template_de1soc/async_trap_and_reset.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/async_trap_and_reset_gen_1_pulse.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/audio_controller.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/audio_visual.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/clock_sync.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/db/lcd_scope_auto_stripped.stp
+C:/Users/Jordan/Desktop/FP/template_de1soc/doublesync.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/flash.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/generate_arbitrary_divided_clk32.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/ipod_fsm.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/ipod_fsm_timer.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/ipod_fsm_timer_tb.vwf
+C:/Users/Jordan/Desktop/FP/template_de1soc/kbd_ctrl.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/key2ascii.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/keyboard_converter.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/keyboard_converter_tb.vwf
+C:/Users/Jordan/Desktop/FP/template_de1soc/lcd_scope.stp
+C:/Users/Jordan/Desktop/FP/template_de1soc/lcd_scope_encapsulated_pacoblaze_wrapper.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/narrator_ctrl.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/pacoblaze_instruction_memory.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/picoblaze_template.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/pracpico.mem
+C:/Users/Jordan/Desktop/FP/template_de1soc/scope_capture.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/simple_ipod_solution.qpf
+C:/Users/Jordan/Desktop/FP/template_de1soc/simple_ipod_solution.qsf
+C:/Users/Jordan/Desktop/FP/template_de1soc/simple_ipod_solution.v
+C:/Users/Jordan/Desktop/FP/template_de1soc/speed_reg_control.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/timing_constraints.sdc
+C:/Users/Jordan/Desktop/FP/template_de1soc/to_slow_clk_interface.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/var_clk_div32.qxp
+C:/Users/Jordan/Desktop/FP/template_de1soc/write_kbd_to_scope_lcd.v
+c:/users/jordan/desktop/fp/template_de1soc/pacoblaze/pacoblaze.v
+c:/users/jordan/desktop/fp/template_de1soc/pacoblaze/pacoblaze3.v
+c:/users/jordan/desktop/fp/template_de1soc/pacoblaze/pacoblaze_alu.v
+c:/users/jordan/desktop/fp/template_de1soc/pacoblaze/pacoblaze_idu.v
+c:/users/jordan/desktop/fp/template_de1soc/pacoblaze/pacoblaze_inc.v
+c:/users/jordan/desktop/fp/template_de1soc/pacoblaze/pacoblaze_register.v
+c:/users/jordan/desktop/fp/template_de1soc/pacoblaze/pacoblaze_scratch.v
+c:/users/jordan/desktop/fp/template_de1soc/pacoblaze/pacoblaze_stack.v
+	======= Total: 43 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Mon Apr 13 20:48:03 2020
+Source archive file:	C:/Users/Jordan/Desktop/FP/template_de1soc/simple_ipod_solution_tmp_archive.qar
+Archive was extracted into	C:/Users/Jordan/Desktop/ProjectCopies/plays the thing/
+		 - successfully.

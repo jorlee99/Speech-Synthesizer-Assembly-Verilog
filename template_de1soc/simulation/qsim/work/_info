@@ -1,0 +1,330 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Jordan/Desktop/FP/template_de1soc/simulation/qsim
+vaudio_visual
+Z1 !s110 1587066298
+!i10b 1
+!s100 7HjP`?gZ3Nm3IbKF38H2T2
+I<GDMLCRgeRH:J0Xe8e<;`3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1587066296
+Z3 8simple_ipod_solution.vo
+Z4 Fsimple_ipod_solution.vo
+Z5 L0 32
+Z6 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1587066297.812000
+Z7 !s107 simple_ipod_solution.vo|
+Z8 !s90 -work|work|simple_ipod_solution.vo|
+!i113 1
+Z9 o-work work
+vaudio_visual_vlg_check_tst
+R1
+!i10b 1
+!s100 C707?Oa>=c9Sel_QQSTl30
+IC4PUg;VII[6@APQiFRKI90
+R2
+R0
+Z10 w1587066294
+Z11 8audio_visual_tb.vwf.vt
+Z12 Faudio_visual_tb.vwf.vt
+Z13 L0 62
+R6
+r1
+!s85 0
+31
+Z14 !s108 1587066298.943000
+Z15 !s107 audio_visual_tb.vwf.vt|
+Z16 !s90 -work|work|audio_visual_tb.vwf.vt|
+!i113 1
+R9
+vaudio_visual_vlg_sample_tst
+R1
+!i10b 1
+!s100 4=4@ZOKkC`669KeENMWZm3
+IhJ[K;7W1z=S;V2<RM>9W40
+R2
+R0
+R10
+R11
+R12
+Z17 L0 30
+R6
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R9
+vaudio_visual_vlg_vec_tst
+R1
+!i10b 1
+!s100 H?6A6oHi7;_PmzGN5[^T:1
+I=7eD2O;3[lh=zNY61:L?D3
+R2
+R0
+R10
+R11
+R12
+L0 344
+R6
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R9
+vipod_fsm
+Z18 !s110 1587058182
+!i10b 1
+!s100 j;nMj2AM61eD92Rh2;TbL2
+IjR>[^2TF9GDKMWF:j>[b90
+R2
+R0
+w1587058179
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1587058181.093000
+R7
+R8
+!i113 1
+R9
+vipod_fsm_timer
+Z19 !s110 1587067007
+!i10b 1
+!s100 _>zFTAYD7aL1:QLU5<jl12
+ITjNC]`of8@J2c?H<SCaHb0
+R2
+R0
+w1587067005
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1587067006.572000
+R7
+R8
+!i113 1
+R9
+vipod_fsm_timer_vlg_check_tst
+R19
+!i10b 1
+!s100 RE1b7lkFIzYYD;[kQ3RWM3
+I@^N43bfAa:Dc>jA=zN4i92
+R2
+R0
+Z20 w1587067003
+Z21 8ipod_fsm_timer_tb.vwf.vt
+Z22 Fipod_fsm_timer_tb.vwf.vt
+L0 66
+R6
+r1
+!s85 0
+31
+Z23 !s108 1587067007.681000
+Z24 !s107 ipod_fsm_timer_tb.vwf.vt|
+Z25 !s90 -work|work|ipod_fsm_timer_tb.vwf.vt|
+!i113 1
+R9
+vipod_fsm_timer_vlg_sample_tst
+R19
+!i10b 1
+!s100 0@kk1oc2Pc]zPnG>>a=c80
+IX8HUmKA>YBaF4SK=nTNg12
+R2
+R0
+R20
+R21
+R22
+R17
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R9
+vipod_fsm_timer_vlg_vec_tst
+R19
+!i10b 1
+!s100 <S[:G[FiIn9zIC?00m0jU2
+I^g6ATO_=7::9PlI_on^<@3
+R2
+R0
+R20
+R21
+R22
+L0 259
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R9
+vipod_fsm_vlg_check_tst
+R18
+!i10b 1
+!s100 _GLNlz>[U`CJ_dW=U_>=a2
+I[8=oo[5SndXXiXh@fRdT13
+R2
+R0
+Z26 w1587058177
+Z27 8ipod_fsm_tb.vwf.vt
+Z28 Fipod_fsm_tb.vwf.vt
+L0 82
+R6
+r1
+!s85 0
+31
+Z29 !s108 1587058182.271000
+Z30 !s107 ipod_fsm_tb.vwf.vt|
+Z31 !s90 -work|work|ipod_fsm_tb.vwf.vt|
+!i113 1
+R9
+vipod_fsm_vlg_sample_tst
+R18
+!i10b 1
+!s100 RC^8=;@:CVg;oXn;g0<@R1
+IFNI`17MC`RNO?S>Tbo`R^0
+R2
+R0
+R26
+R27
+R28
+R17
+R6
+r1
+!s85 0
+31
+R29
+R30
+R31
+!i113 1
+R9
+vipod_fsm_vlg_vec_tst
+R18
+!i10b 1
+!s100 =YcYaH33Tj51BocPa@h[X2
+IN6@R2JJgEDU[54MaViBLZ3
+R2
+R0
+R26
+R27
+R28
+L0 1139
+R6
+r1
+!s85 0
+31
+R29
+R30
+R31
+!i113 1
+R9
+vkeyboard_converter
+Z32 !s110 1586977880
+!i10b 1
+!s100 1NLK7UfhC1^j7j?dcRK7;3
+I[lgj[iHOYG:1PIcSK^7zh2
+R2
+R0
+w1586977879
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1586977879.813000
+R7
+R8
+!i113 1
+R9
+vkeyboard_converter_vlg_check_tst
+R32
+!i10b 1
+!s100 IA171i4h<>5?Ie@foK1zL2
+I6aHAi;P>Y<9M;z9R?mP;e0
+R2
+R0
+Z33 w1586977876
+Z34 8keyboard_converter_tb.vwf.vt
+Z35 Fkeyboard_converter_tb.vwf.vt
+R13
+R6
+r1
+!s85 0
+31
+Z36 !s108 1586977880.903000
+Z37 !s107 keyboard_converter_tb.vwf.vt|
+Z38 !s90 -work|work|keyboard_converter_tb.vwf.vt|
+!i113 1
+R9
+vkeyboard_converter_vlg_sample_tst
+R32
+!i10b 1
+!s100 OKDlT0d[F6JMFK]BAYdo>2
+I:U8a0D`Rf`A3aPR`i0_:C0
+R2
+R0
+R33
+R34
+R35
+R17
+R6
+r1
+!s85 0
+31
+R36
+R37
+R38
+!i113 1
+R9
+vkeyboard_converter_vlg_vec_tst
+R32
+!i10b 1
+!s100 VT5bT;b>IkDF<D325ji_T1
+IZF<3o=a[]oB^2Pk4`cej03
+R2
+R0
+R33
+R34
+R35
+L0 354
+R6
+r1
+!s85 0
+31
+R36
+R37
+R38
+!i113 1
+R9

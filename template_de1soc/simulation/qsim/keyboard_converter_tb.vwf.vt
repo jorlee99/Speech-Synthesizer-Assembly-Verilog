@@ -1,0 +1,472 @@
+// Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/15/2020 12:11:16"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    keyboard_converter
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module keyboard_converter_vlg_sample_tst(
+	clk,
+	key_update,
+	keyin,
+	sampler_tx
+);
+input  clk;
+input  key_update;
+input [7:0] keyin;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or key_update or keyin)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module keyboard_converter_vlg_check_tst (
+	direction,
+	pause,
+	res_song,
+	start_audio,
+	state,
+	sampler_rx
+);
+input  direction;
+input  pause;
+input  res_song;
+input  start_audio;
+input [5:0] state;
+input sampler_rx;
+
+reg  direction_expected;
+reg  pause_expected;
+reg  res_song_expected;
+reg  start_audio_expected;
+reg [5:0] state_expected;
+
+reg  direction_prev;
+reg  pause_prev;
+reg  res_song_prev;
+reg  start_audio_prev;
+reg [5:0] state_prev;
+
+reg  direction_expected_prev;
+reg  pause_expected_prev;
+reg  res_song_expected_prev;
+reg  start_audio_expected_prev;
+reg [5:0] state_expected_prev;
+
+reg  last_direction_exp;
+reg  last_pause_exp;
+reg  last_res_song_exp;
+reg  last_start_audio_exp;
+reg [5:0] last_state_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:5] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 5'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	direction_prev = direction;
+	pause_prev = pause;
+	res_song_prev = res_song;
+	start_audio_prev = start_audio;
+	state_prev = state;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	direction_expected_prev = direction_expected;
+	pause_expected_prev = pause_expected;
+	res_song_expected_prev = res_song_expected;
+	start_audio_expected_prev = start_audio_expected;
+	state_expected_prev = state_expected;
+end
+
+
+
+// expected direction
+initial
+begin
+	direction_expected = 1'bX;
+end 
+
+// expected pause
+initial
+begin
+	pause_expected = 1'bX;
+end 
+
+// expected res_song
+initial
+begin
+	res_song_expected = 1'bX;
+end 
+
+// expected start_audio
+initial
+begin
+	start_audio_expected = 1'bX;
+end 
+// expected state[ 5 ]
+initial
+begin
+	state_expected[5] = 1'bX;
+end 
+// expected state[ 4 ]
+initial
+begin
+	state_expected[4] = 1'bX;
+end 
+// expected state[ 3 ]
+initial
+begin
+	state_expected[3] = 1'bX;
+end 
+// expected state[ 2 ]
+initial
+begin
+	state_expected[2] = 1'bX;
+end 
+// expected state[ 1 ]
+initial
+begin
+	state_expected[1] = 1'bX;
+end 
+// expected state[ 0 ]
+initial
+begin
+	state_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(direction_expected or direction or pause_expected or pause or res_song_expected or res_song or start_audio_expected or start_audio or state_expected or state)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected direction = %b | expected pause = %b | expected res_song = %b | expected start_audio = %b | expected state = %b | ",direction_expected_prev,pause_expected_prev,res_song_expected_prev,start_audio_expected_prev,state_expected_prev);
+	$display("| real direction = %b | real pause = %b | real res_song = %b | real start_audio = %b | real state = %b | ",direction_prev,pause_prev,res_song_prev,start_audio_prev,state_prev);
+`endif
+	if (
+		( direction_expected_prev !== 1'bx ) && ( direction_prev !== direction_expected_prev )
+		&& ((direction_expected_prev !== last_direction_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port direction :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", direction_expected_prev);
+		$display ("     Real value = %b", direction_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_direction_exp = direction_expected_prev;
+	end
+	if (
+		( pause_expected_prev !== 1'bx ) && ( pause_prev !== pause_expected_prev )
+		&& ((pause_expected_prev !== last_pause_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port pause :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", pause_expected_prev);
+		$display ("     Real value = %b", pause_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_pause_exp = pause_expected_prev;
+	end
+	if (
+		( res_song_expected_prev !== 1'bx ) && ( res_song_prev !== res_song_expected_prev )
+		&& ((res_song_expected_prev !== last_res_song_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port res_song :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", res_song_expected_prev);
+		$display ("     Real value = %b", res_song_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_res_song_exp = res_song_expected_prev;
+	end
+	if (
+		( start_audio_expected_prev !== 1'bx ) && ( start_audio_prev !== start_audio_expected_prev )
+		&& ((start_audio_expected_prev !== last_start_audio_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port start_audio :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", start_audio_expected_prev);
+		$display ("     Real value = %b", start_audio_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_start_audio_exp = start_audio_expected_prev;
+	end
+	if (
+		( state_expected_prev[0] !== 1'bx ) && ( state_prev[0] !== state_expected_prev[0] )
+		&& ((state_expected_prev[0] !== last_state_exp[0]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_state_exp[0] = state_expected_prev[0];
+	end
+	if (
+		( state_expected_prev[1] !== 1'bx ) && ( state_prev[1] !== state_expected_prev[1] )
+		&& ((state_expected_prev[1] !== last_state_exp[1]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_state_exp[1] = state_expected_prev[1];
+	end
+	if (
+		( state_expected_prev[2] !== 1'bx ) && ( state_prev[2] !== state_expected_prev[2] )
+		&& ((state_expected_prev[2] !== last_state_exp[2]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_state_exp[2] = state_expected_prev[2];
+	end
+	if (
+		( state_expected_prev[3] !== 1'bx ) && ( state_prev[3] !== state_expected_prev[3] )
+		&& ((state_expected_prev[3] !== last_state_exp[3]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_state_exp[3] = state_expected_prev[3];
+	end
+	if (
+		( state_expected_prev[4] !== 1'bx ) && ( state_prev[4] !== state_expected_prev[4] )
+		&& ((state_expected_prev[4] !== last_state_exp[4]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_state_exp[4] = state_expected_prev[4];
+	end
+	if (
+		( state_expected_prev[5] !== 1'bx ) && ( state_prev[5] !== state_expected_prev[5] )
+		&& ((state_expected_prev[5] !== last_state_exp[5]) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port state[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", state_expected_prev);
+		$display ("     Real value = %b", state_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_state_exp[5] = state_expected_prev[5];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module keyboard_converter_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg key_update;
+reg [7:0] keyin;
+// wires                                               
+wire direction;
+wire pause;
+wire res_song;
+wire start_audio;
+wire [5:0] state;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+keyboard_converter i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.direction(direction),
+	.key_update(key_update),
+	.keyin(keyin),
+	.pause(pause),
+	.res_song(res_song),
+	.start_audio(start_audio),
+	.state(state)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
+end 
+
+// key_update
+initial
+begin
+	key_update = 1'b0;
+	key_update = #50000 1'b1;
+	key_update = #30000 1'b0;
+	key_update = #70000 1'b1;
+	key_update = #20000 1'b0;
+	key_update = #50000 1'b1;
+	key_update = #30000 1'b0;
+	key_update = #50000 1'b1;
+	key_update = #30000 1'b0;
+	key_update = #70000 1'b1;
+	key_update = #40000 1'b0;
+end 
+// keyin[ 7 ]
+initial
+begin
+	keyin[7] = 1'b0;
+end 
+// keyin[ 6 ]
+initial
+begin
+	keyin[6] = 1'b1;
+	keyin[6] = #480000 1'b0;
+end 
+// keyin[ 5 ]
+initial
+begin
+	keyin[5] = 1'b0;
+end 
+// keyin[ 4 ]
+initial
+begin
+	keyin[4] = 1'b0;
+	keyin[4] = #340000 1'b1;
+	keyin[4] = #140000 1'b0;
+end 
+// keyin[ 3 ]
+initial
+begin
+	keyin[3] = 1'b0;
+end 
+// keyin[ 2 ]
+initial
+begin
+	keyin[2] = 1'b0;
+	keyin[2] = #100000 1'b1;
+	keyin[2] = #240000 1'b0;
+end 
+// keyin[ 1 ]
+initial
+begin
+	keyin[1] = 1'b1;
+	keyin[1] = #100000 1'b0;
+	keyin[1] = #170000 1'b1;
+	keyin[1] = #210000 1'b0;
+end 
+// keyin[ 0 ]
+initial
+begin
+	keyin[0] = 1'b0;
+	keyin[0] = #170000 1'b1;
+	keyin[0] = #100000 1'b0;
+end 
+
+keyboard_converter_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.key_update(key_update),
+	.keyin(keyin),
+	.sampler_tx(sampler)
+);
+
+keyboard_converter_vlg_check_tst tb_out(
+	.direction(direction),
+	.pause(pause),
+	.res_song(res_song),
+	.start_audio(start_audio),
+	.state(state),
+	.sampler_rx(sampler)
+);
+endmodule
+
